@@ -1,0 +1,364 @@
+/* Education title styling */
+.education-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 20px 470px;
+}
+
+.education-title h1 {
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.education-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  z-index: -20;
+}
+
+/* General section styling */
+.education__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Styling for the education box */
+.education__box {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center; /* Center the timeline */
+  align-items: flex-start; /* Align items to the start to accommodate more details */
+  width: 60%;
+  margin-bottom: 2rem;
+  margin-top: 10px;
+  position: relative;
+  min-height: 550px; /* Increase min height to fit more content */
+}
+
+/* Styling for the content within the box */
+.education__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.education__school {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.education__batch {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0.5rem; /* Adjusted margin-bottom to create more space between batch and text */
+}
+
+.education__text {
+  font-size: 1.2rem; /* Adjusted font size for the new text */
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the View More button */
+.view-more__button {
+  display: inline-flex;
+  align-items: center; /* Align items horizontally */
+  color: black;
+  border: none;
+  margin-top: 7px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  background: linear-gradient(267deg, #df8908 -5.09%, #b415ff 106.28%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
+  white-space: nowrap; /* Prevent the button from taking too much space */
+}
+
+.view-more__button:hover {
+  transform: scale(1.05);
+  border: 2px solid white;
+}
+
+/* Styling for the timeline */
+.education__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-top: 80px;
+  transform: translateX(-50%);
+}
+
+.timeline__line {
+  width: 4px; /* Increase the width of the line */
+  background-color: purple;
+  height: 120px; /* Adjust the height to fit your design */
+}
+
+.timeline__point {
+  width: 20px; /* Increase the size of the point */
+  height: 20px; /* Increase the size of the point */
+  background-color: purple;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline__content-left {
+  position: absolute;
+  left: -250px; /* Position the content to the left of the point */
+  top: -10px; /* Adjust vertical alignment */
+}
+
+.timeline__content-right {
+  position: absolute;
+  right: -290px; /* Position the content to the right of the point */
+  top: -10px; /* Adjust vertical alignment */
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust existing modal content styles */
+
+
+ 
+
+.modal__content .school,
+.modal__content .intermediate,
+.modal__content .college {
+  background-size: cover;
+  background-position: center;
+  
+  /* Adjust the height as needed */
+  padding: 2rem;
+  border-radius: 8px; /* Optional: Add border radius to match the modal's style */
+  color: white; /* Ensure text color contrasts with the background */
+  position: relative; /* Make sure elements inside can be positioned correctly */
+}
+
+/* Individual background images */
+.school {
+  min-height: 250px;
+  width: 90%;
+  background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('C:\Users\GANESH\OneDrive\Desktop\projects\portfolio\portfolio\src\assets\school.jpg');
+}
+
+.intermediate {
+  min-height: 200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('C:\Users\GANESH\OneDrive\Desktop\projects\portfolio\portfolio\src\assets\Intermediate.jpg');
+}
+
+.college {
+  min-height: 350px;
+  width: 50%;
+  margin-left: 22%;
+  background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('C:\Users\GANESH\OneDrive\Desktop\projects\portfolio\portfolio\src\assets\College.png');
+}
+
+/* Styling for the close icon */
+.modal__close-icon {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  background: transparent;
+  border: none;
+  color: white; /* Adjust color to make it visible */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+.modal__close-icon:hover {
+  color: red;
+}
+
+.text {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+.text h4 {
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 15px;
+  text-align: left;
+}
+
+/* Styling for the icon */
+.icon {
+  margin-left: 0.5rem; /* Space between text and icon */
+}
+.icons{
+  margin-top: 15px;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .education__box {
+    width: 80%;
+  }
+
+  .timeline__content-left {
+    left: -200px;
+  }
+
+  .timeline__content-right {
+    right: -200px;
+  }
+
+  .education-title {
+    margin: 20px 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .education__box {
+    width: 100%;
+  }
+
+  .timeline__content-left {
+    left: -150px;
+  }
+
+  .timeline__content-right {
+    right: -150px;
+  }
+
+  .education-title {
+    margin: 20px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education__box {
+    width: 100%;
+  }
+
+  .timeline__content-left,
+  .timeline__content-right {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .timeline__line {
+    height: 80px;
+  }
+
+  .education-title {
+    margin: 20px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .education__title h1 {
+    font-size: 40px;
+  }
+
+  .education__text {
+    font-size: 1rem;
+  }
+
+  .view-more__button {
+    font-size: 0.8rem;
+  }
+
+  .timeline__line {
+    height: 60px;
+  }
+}
+
+@media (max-width: 474px) {
+  .timeline__content-left,
+  .timeline__content-right {
+    font-size: 0.9rem;
+  }
+  
+/* Modal styling */
+.modal {
+  position: fixed;
+  width: 98%;
+  height: 100%;
+ 
+}
+
+  .timeline__line {
+    height: 140px;
+  }
+  .timeline__content-left{
+    margin-right: 200px;
+    margin-top: 140px;
+  }
+  .timeline__content-right{
+    margin-left: 160px;
+    margin-top: 170px;
+  }
+  .education__box {
+    width: 90%;
+    margin-left: 5px;
+  }
+  .education-title h1 {
+    font-size: 30px;
+  }
+  .education-title  {
+    margin-left: 5%;
+  }
+
+  .education-title img {
+    width: 29%;
+  margin-right: 29%;
+  }
+  
+.modal__content .school,
+.modal__content .intermediate,
+.modal__content .college {
+  width: 72%;
+  margin-left: 8px;
+}
+
+
+
+}

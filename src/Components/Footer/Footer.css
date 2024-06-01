@@ -1,0 +1,272 @@
+.footer-left img{
+    height: 90px;
+    margin-bottom: 10px;
+    
+}
+.footer{
+  width: 1000px;
+  flex-direction: column;
+margin-left: 180px;
+
+padding-top: 80px;
+  
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer-left{
+    font-size: 15px;
+    max-width: 350px;
+}
+.footer-left{
+    margin-bottom: 10px;
+}
+.footer-top-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.footer-email-input{
+    gap: 20px;
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #32323b;
+    padding-right: 80px;
+}
+.footer-email-input input{
+    outline: none;
+ 
+
+    border: none;
+    background: transparent;
+    color: #a0a0a0;
+    font-family: outfit;
+    font-size: 18px;
+
+}
+.footer-subscribe{
+    font-size: 20px;
+    padding: 22px 50px;
+    border: 1px solid  white;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#df8908 -5.09%,#b415ff 106.28%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-subscribe:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+   padding: 20px 0px;
+}
+
+.footer-bottom-right{
+    display: flex;
+    margin-bottom: -5px;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-email-input:hover{
+border: 2px solid white;
+}
+
+  @media (max-width: 992px) {
+    .footer {
+      padding: 50px 30px;
+    }
+  
+    .footer-left {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-left .logo-text {
+      font-size: 22px;
+    }
+  
+    .footer-left p {
+      font-size: 14px;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-top-right {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .footer-email-input {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .footer-subscribe {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-bottom-left {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 20px;
+    }
+  
+    .footer-left .logo-text {
+      font-size: 20px;
+    }
+  
+    .footer-left p {
+      font-size: 13px;
+    }
+  
+    .footer-email-input {
+      padding: 10px 10px;
+    }
+  
+    .footer-email-input input {
+      font-size: 13px;
+    }
+  
+    .footer-subscribe {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  
+    .footer-bottom-right {
+      gap: 15px;
+    }
+  
+    .footer-bottom-left {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer {
+        padding: 30px 15px;
+       
+       
+        width: 95%; /* Ensure footer takes full width */
+        margin: 0 auto; /* Center footer */
+        box-sizing: border-box; /* Include padding and border in total width */
+    }
+
+    .hr {
+        width: 100%;
+        margin-top: 10px;
+     right: 300px;
+  
+        
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+
+        margin-left: 3%; 
+        margin-top: 80px; /* Remove unnecessary margin */
+        /* Remove negative margin */
+    }
+
+    .footer-left {
+        text-align: center;
+        margin-bottom: 30px;
+       
+        width: 200%; /* Use full width for better alignment */
+    }
+
+    .footer-left  {
+        font-size: 30px;
+       
+    
+    }
+    .logo-text{
+      font-size: 30px;
+      margin-right: 54%;
+      
+    }
+   
+
+    .footer-left p {
+        font-size: 13px;
+        margin-top: 13px;
+        width: 100%;
+      
+    
+    }
+
+    .footer-top-right {
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+   
+        margin-left: 5%;
+        margin-top: -10px; /* Use full width */
+    }
+
+    .footer-email-input {
+        padding: 8px 10px;
+      
+        width:57%; /* Use full width */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .footer-email-input input {
+        font-size: 12px;
+        
+        width: 100%; /* Ensure input takes full width */
+    }
+
+    .footer-subscribe {
+        padding: 20px 10px;
+       
+        font-size: 16px;
+        width: 50%; /* Use full width */
+        text-align: center;
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+       
+        align-items: center;
+        text-align: center;
+        margin-left: 3%; /* Remove negative margin */
+    }
+
+    .footer-bottom-left {
+        font-size: 12px;
+        margin-bottom: 10px;
+        width: 120%;
+    }
+
+    .footer-bottom-right {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensure full width alignment */
+    }
+}

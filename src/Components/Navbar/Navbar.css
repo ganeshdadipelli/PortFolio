@@ -1,0 +1,188 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 170px;
+    position: relative;
+  }
+  
+  .logo-text {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: -40px;
+    padding-right: 20px;
+    background: linear-gradient(267deg, #da7c25, #b923e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: auto; /* Move the logo text to the left */
+    white-space: nowrap; /* Ensure the text does not wrap to a new line */
+  }
+ 
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 15px;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin-top: 1px;
+  }
+  
+  .nav-connect {
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    white-space: nowrap;
+  }
+  
+  .nav-connect:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav-menu li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .nav-menu li img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7px;
+  }
+  
+  .anchor-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Responsive design for smaller screens */
+@media (max-width: 1000px) {
+    .navbar {
+      padding: 10px 20px;
+     
+      width: 87%;
+      margin-left: 10px;
+    }
+  
+    .logo-text {
+      font-size: 25px; /* Reduce font size for smaller screens */
+      margin-bottom: 5px; /* Adjust margin */
+      margin-left: 0; /* Reset margin-left */
+      padding-right: 10px; /* Adjust padding */
+ 
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 60px;
+      left: 0; /* Align menu to the left */
+      background: transparent; /* Set background to transparent */
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      display: none;
+      padding: 10px;
+      width: 80%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    margin-left: 10px;
+     
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 0;
+      
+    }
+  
+    .nav-menu ul li:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      
+    }
+  
+    .nav-connect {
+      display: none; /* Hide the "Connect With Me" text */
+     
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  
+    .hamburger .bar {
+      background-color: #fff;
+      
+    }
+  }
+  @media (max-width: 575px) {
+    .hamburger {
+      top: 5px;
+     margin-right: 90px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .hamburger {
+      top:14px;
+      left: 92%;
+     
+    }
+    .logo-text{
+      font-size: 29px;
+    
+    }
+   
+   .gani{
+    margin-right: 85%;
+    margin-top: -5%;
+   
+   }
+
+  }
+  

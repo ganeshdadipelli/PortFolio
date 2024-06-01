@@ -1,0 +1,122 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    
+}
+.mywork-title{
+    position: relative;
+}
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+  
+    right: 0;
+    z-index: -2;
+    width: 41%;
+}
+.mywork-container{
+display: grid;
+grid-template-columns: 1 1fr 1fr;
+gap: 60px;
+margin-left: 0;
+
+
+}
+
+.mywork-container img {
+    max-width: 300%; /* Set maximum width */
+    max-height: 300px; /* Set maximum height */
+    /* You can adjust the max-height value according to your preference */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    box-sizing: border-box;
+    width: 419px;
+   
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .mywork-container img:hover{
+    transform: scale(1.08);
+    transition: 0.4s;
+border: 3px solid #ff00ff;
+border-radius: 10px;
+
+  }
+  .mywork-showmore{
+    display: flex;
+    gap: 10px;
+   
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+  }
+
+  @media (max-width: 575px) {
+    .mywork {
+        margin: 60px 20px;
+        
+    }
+    .mywork-title{
+      margin-left: 5%;
+      margin-top: -70px;
+    }
+    .mywork-title h1 {
+        font-size: 25px;
+        
+    }
+    .mywork-title img {
+        width: 50%;
+    }
+    .mywork-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 40%;
+        margin-right: 44%;
+       
+      
+    }
+    .mywork-showmore{
+      margin-top: -34px;
+      margin-left: 5%;
+    
+      font-size: 20px;
+    }
+    .myworks{
+      margin-right: 30%;
+      width: 70%;
+     
+    }
+}
+
+/* Medium Devices (576px to 991px) */
+@media (min-width: 576px) and (max-width: 991px) {
+    .mywork {
+        margin: 60px 50px;
+    }
+    .mywork-title h1 {
+        font-size: 45px;
+    }
+    .mywork-container img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
